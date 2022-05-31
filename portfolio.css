@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&family=Source+Code+Pro:wght@300&display=swap');
+*{                     /* This is to define the style of the entire html page that is linked to this style sheet margin and padding zero 
+                        pushes the text to extreme left*/
+    margin:0;
+    padding:0;
+}
+.sidebar{
+    position: absolute;
+    background-color: #227a8c;
+    width: 150px;
+    font-family: 'Roboto Condensed', sans-serif;
+    height:100vh;
+    transition: transform 0.3s ease-in;
+}
+.sidebar nav{
+    padding : 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    padding-bottom: 30px;
+    font-size: 23px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color:white;
+}
+.main{
+    /*background-color:orange;*/
+    padding:25px;
+    width:85vw;
+}
+.container{
+    display:flex;
+}
+.infocontainer{
+    display:flex;
+    /*background-color: brown;*/
+    height:70vh;
+    width:70vw;
+    margin: 40px auto;
+    justify-content: space-around;
+}
+.devinfo{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    font-family: 'Source Code Pro', monospace;
+    font-size:20px;
+}
+.hello{
+    font-size:3em;
+}
+.name{
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.about{
+    margin-top: 18px;
+    font-size:2em;
+}
+.more{
+    margin-top:20px;
+    font-size:1em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.buttons{
+    font-size: 12px;
+}
+.btn{
+    font-size: 2em;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 5px 6px;
+    background-color: darkblue;
+    color:azure;
+    margin: 14px 5px;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: azure;
+    color:darkblue;
+}
+.btn-sm{
+    font-size: 15px;
+    padding: 2px 4px;
+    margin: 5px 0px 0px -2px;
+}
+.devpic img{
+    width:280px;
+    height:70vh;
+}
+.contactform{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.contactform h2{
+    font-family: 'Source Code Pro', monospace;
+}
+.contactform form div{
+    display:flex;
+    flex-direction: column;
+    padding: 10px 1px;
+}
+.contactform form div input{
+    width:26vw;
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding:4px;
+}
+#emailHelp{
+    font-size:14px;
+    color:blue;
+    margin: 5px 0px;
+    padding: 9px 0px 0px 0px;
+}
+#form-check{
+    display:flex;
+    flex-direction: row;
+}
+#form-check input{
+    width: 20px;
+    margin-right: -1px;
+    margin-left: -5px;
+}
+#form-enquiry{
+    padding: 0px 0 0px 0;
+    margin-top: -2px;
+}
+.blogcontainer{
+    margin:10px;
+}
+.blogitem h2{
+    margin:15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.blogitem p{
+    margin: 0px 0px 0px 20px;
+    padding-top: 0px;
+    font-size: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+.blogitem button{
+    margin: 0px 0px 0px 20px;
+}
+p{
+    margin-top: 15px;
+    font-family: 'Source Code Pro', monospace;
+}
+.intro h2{
+    margin-top: 8px;
+    margin-bottom: -7px
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skillset{
+    align-items: center;
+    display:flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+.skill{
+    align-items: center;
+    display:flex;  
+}
+.comp{
+    margin-left: 10px;
+    width:120px;
+    height:8px;
+    background-color:greenyellow;
+    border:2px solid black;
+}
+.incomp{
+    width:80px;
+    height:8px;
+    background-color: red;
+    border:2px solid black;
+}
+.sidebargo{
+    transform:translate(-430px,0px);
+    position:absolute;
+}
+@media (max-width:830px){
+    /*.sidebar{
+        transform:translate(-430px,0px);
+        position:absolute;
+    }*/
+    .devpic{
+        display: none;
+    }
+    .devinfo{
+        font-size: 12px;
+    }
+    .buttons{
+        font-size: 8px;
+    }
+    .btn-sm{
+        font-size: 10px;
+    }
+}
+@media (min-width:1000px){
+    .btn-sm{
+        font-size: 25px;
+    }
+}
+.icons{
+    display: flex;
+    position:absolute;
+    left:4px;
+    top:8px;
+}
+.ham{
+    left:5px;
+}
+.cross{
+    left:115px;
+    position:absolute;
+}
+.ham:hover{
+cursor:pointer;
+}
+.cross:hover{
+    cursor:pointer;
+}

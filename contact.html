@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hritik Rao, Programmer,Web developer,AI enthusiast</title>
+    <link rel="stylesheet" href ="portfolio.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="/portfolio.html">Home</a></li>
+                    <li><a href="/intro.html">Intro</a></li>
+                    <li><a href="/cv.html">Resume</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/blogs.html">Blogs</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="icons">
+                <div class="ham"><img src="images/ham.png" alt="open" width="20px" height="20px"></div>
+                <div class="cross"><img src="images/cross.jpg" alt="close" width="20px" height="20px"> </div>
+            </div>
+            <div class="contactform"> 
+                <h2>Contact me for work/Enquiries</h2>
+                <form>
+                    <div class="mb-3">
+                      <label for="clientemail" class="form-label">Email address:</label>
+                      <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="clientphone" class="form-label">Phone number:</label>
+                      <input type="phone" class="form-control" id="clientphone">
+                      <div id="emailHelp" class="form-text">We'll never share your email and phone number with anyone else.</div>
+                    </div>
+                    <div class="mb-3" id="form-enquiry">
+                        <label id = "request" class="form-enquiry-label" for="enquiry">Enquiry:</label>
+                        <input type="text" class="form-enquiry-input" id="enquiry">
+                    </div>
+                    <div class="mb-3" id="form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label id = "request" class="form-check-label" for="isclient">wanted you to work on a project</label>
+                    </div>
+                    <button type="submit" class="btn btn-sm">Submit</button>       <!-- it is a sub class of class btn-->
+                  </form>
+            </div>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
